@@ -1,0 +1,15 @@
+---
+title: "MapProject"
+author: "Wang Luyuan"
+date: "2019/8/22"
+output: html_document
+---
+## Developing Data Products
+```{r}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=51.509865,lng = -0.118092, popup = "London")
+my_map
+```
+
